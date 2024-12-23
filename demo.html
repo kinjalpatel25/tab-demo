@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style for the clickable blocks */
+        h6.menu-title {
+            color: #04B2F4;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 21px;
+        }
+
+        .clickable-block {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            display: flex;
+            text-decoration: unset;
+        }
+
+        /* Main images to be shown/hidden */
+        .tabs_detail {
+            display: none;
+        }
+
+        .tabs_detail.active {
+            display: block;
+        }
+
+        .material-icons {
+            color: #001F3C;
+            font-size: 20px;
+            line-height: normal;
+            padding-left: 16px;
+        }
+
+        .clickable-block.active {
+            position: relative;
+        }
+
+        .clickable-block.active:before {
+            content: '';
+            position: absolute;
+            height: 50px;
+            border-left: 4px solid #04B2F4;
+            top: auto;
+            bottom: 0px;
+            left: 0;
+        }
+
+        .clickable-block img {
+            filter: invert(10%) sepia(36%) saturate(2683%) hue-rotate(184deg) brightness(2%) contrast(105%);
+        }
+
+        .clickable-block.active img {
+            filter: invert(50%) sepia(24%) saturate(5673%) hue-rotate(161deg) brightness(97%) contrast(98%) !important;
+        }
+
+        h2.title {
+            color: #001F3C;
+            font-size: 40px;
+            letter-spacing: 0.2px;
+            font-weight: 500;
+            line-height: normal;
+            font-family: 'Aeonik';
+        }
+
+        .title-button {
+            margin-bottom: 48px;
+        }
+
+        h1.content-box-title {
+            color: #001F3C;
+            font-size: 24px !important;
+            line-height: normal;
+            padding-top: 32px;
+            padding-bottom: 12px;
+        }
+
+        p.content-box-desc {
+            color: #667085;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            padding-bottom: 32px;
+        }
+
+        .btn {
+            color: #04B2F4;
+            display: flex;
+            align-items: center;
+            border: unset;
+            background: transparent;
+        }
+
+        .btn a {
+            font-family: Aeonik;
+            font-size: 14px;
+            font-style: normal;
+            text-transform: uppercase;
+            font-weight: 500;
+            line-height: 18px;
+            padding-right: 8px;
+            color: #04B2F4;
+            text-decoration: unset;
+        }
+
+        .read_btn {
+            color: #04B2F4;
+            display: flex;
+            align-items: center;
+            border: unset;
+            background: transparent;
+            margin-bottom: 48px;
+        }
+
+        .read_btn a {
+            font-family: Aeonik;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            color: #04B2F4;
+            padding-right: 8px;
+            text-decoration: unset;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Clickable blocks with hyperlinks to toggle between images -->
+    <h6 class="menu-title">Menu</h6>
+    <ul>
+        <li class="clickable-block active">
+            <img decoding="async" loading="lazy" class=""
+                src="https://staging15.elocker.com/wp-content/uploads/2023/12/Testimonials.svg" alt="Resources"
+                width="32" height="32" title="Resources 3">
+            <span class="material-icons tab-icon">Testimonials</span>
+        </li>
+
+        <li class="clickable-block">
+            <img decoding="async" loading="lazy" class=""
+                src="https://staging15.elocker.com/wp-content/uploads/2023/12/blog.svg" alt="Resources" width="32"
+                height="32" title="Resources 3">
+            <span class="material-icons tab-icon">Blog</span>
+        </li>
+
+        <li class="clickable-block">
+            <img decoding="async" loading="lazy" class=""
+                src="https://staging15.elocker.com/wp-content/uploads/2023/12/Knowledgebase.svg" alt="Resources"
+                width="32" height="32" title="Resources 3">
+            <span class="material-icons tab-icon">Knowledgebase</span>
+        </li>
+    </ul>
+
+    <!-- Main images with corresponding IDs -->
+    <div id="testimonial" class="tabs_detail">
+        <div class="title-button d-flex justify-content-between">
+            <h2 class="title">Testimonials</h2>
+            <button class="btn p-0">
+                <a href="#">View all</a>
+                <img decoding="async" src="https://staging15.elocker.com/wp-content/uploads/2023/12/view-all-icon.png"
+                    alt="Resources" title="Resources 12">
+            </button>
+        </div>
+        <div class="row row-reverse-div1">
+            <div class="col-md-6 pe-sm-2">
+                <div class="image-left">
+                    <div class="common-img-div">
+                        <img decoding="async"
+                            src="https://staging15.elocker.com/wp-content/uploads/2023/12/tab-image1.png"
+                            class="img-fluid" alt="about-img1" title="about-img1" width="588">
+                    </div>
+                    <div class="tab-content-box">
+                        <div class="common-heading-main-div">
+                            <h1 class="content-box-title">
+                                he importance of the TEA2 Regulations for the Public Service
+                            </h1>
+                        </div>
+                        <p class="content-box-desc">
+                            The TEA2 regulation stipulates a set of auditing and accountability requirements.
+                            The UK
+                            public sector relies on the ability to communicate, not just internally, between the
+                            forces, be it police, fire or ambulance, but also with each other. Read to learn
+                            more
+                            about the importance of the TEA2 regulations and how to manage them.
+                        </p>
+                        <div class="common-btn-main-div">
+                            <button class="read_btn">
+                                <a href="#">Read more</a>
+                                <img decoding="async"
+                                    src="https://staging15.elocker.com/wp-content/uploads/2023/11/arrow-up-right.svg"
+                                    alt="Resources" title="Resources 12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 ps-sm-2">
+                <div class="image-left">
+                    <div class="common-img-div">
+                        <img decoding="async"
+                            src="https://staging15.elocker.com/wp-content/uploads/2023/12/tab-image2.png"
+                            class="img-fluid" alt="about-img1" title="about-img1" width="588">
+                    </div>
+                    <div class="tab-content-box">
+                        <div class="common-heading-main-div">
+                            <h1 class="content-box-title">
+                                The importance of the TEA2 Regulations for the Public Service
+                            </h1>
+
+                        </div>
+                        <p class="content-box-desc">
+                            The TEA2 regulation stipulates a set of auditing and accountability requirements.
+                            The UK
+                            public sector relies on the ability to communicate, not just internally, between the
+                            forces, be it police, fire or ambulance, but also with each other. Read to learn
+                            more
+                            about the importance of the TEA2 regulations and how to manage them.
+                        </p>
+                        <div class="common-btn-main-div">
+                            <button class="read_btn">
+                                <a href="#">Read more</a>
+                                <img decoding="async"
+                                    src="https://staging15.elocker.com/wp-content/uploads/2023/11/arrow-up-right.svg"
+                                    alt="Resources" title="Resources 12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 pe-sm-2">
+                <div class="image-left">
+                    <div class="common-img-div">
+                        <img decoding="async"
+                            src="https://staging15.elocker.com/wp-content/uploads/2023/12/tab-image3.png"
+                            class="img-fluid" alt="about-img1" title="about-img1" width="588">
+                    </div>
+                    <div class="tab-content-box">
+                        <div class="common-heading-main-div">
+                            <h1 class="content-box-title">
+                                The importance of the TEA2 Regulations for the Public Service
+                            </h1>
+                        </div>
+                        <p class="content-box-desc">
+                            The TEA2 regulation stipulates a set of auditing and accountability requirements.
+                            The UK
+                            public sector relies on the ability to communicate, not just internally, between the
+                            forces, be it police, fire or ambulance, but also with each other. Read to learn
+                            more
+                            about the importance of the TEA2 regulations and how to manage them.
+                        </p>
+                        <div class="common-btn-main-div">
+                            <button class="read_btn">
+                                <a href="#">Read more</a>
+                                <img decoding="async"
+                                    src="https://staging15.elocker.com/wp-content/uploads/2023/11/arrow-up-right.svg"
+                                    alt="Resources" title="Resources 12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 ps-sm-2">
+                <div class="image-left">
+                    <div class="common-img-div">
+                        <img decoding="async"
+                            src="https://staging15.elocker.com/wp-content/uploads/2023/12/tab-image2.png"
+                            class="img-fluid" alt="about-img1" title="about-img1" width="588">
+                    </div>
+                    <div class="tab-content-box">
+                        <div class="common-heading-main-div">
+                            <h1 class="content-box-title">
+                                The importance of the TEA2 Regulations for the Public Service
+                            </h1>
+                        </div>
+                        <p class="content-box-desc">
+                            The TEA2 regulation stipulates a set of auditing and accountability requirements.
+                            The UK
+                            public sector relies on the ability to communicate, not just internally, between the
+                            forces, be it police, fire or ambulance, but also with each other. Read to learn
+                            more
+                            about the importance of the TEA2 regulations and how to manage them.
+                        </p>
+                        <div class="common-btn-main-div">
+                            <button class="read_btn">
+                                <a href="#">Read more</a>
+                                <img decoding="async"
+                                    src="https://staging15.elocker.com/wp-content/uploads/2023/11/arrow-up-right.svg"
+                                    alt="Resources" title="Resources 12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="blog" class="tabs_detail">
+        <div class="title-button d-flex justify-content-between">
+            <h2 class="title">Blog</h2>
+            <button class="btn p-0">
+                <a href="#">View all</a>
+                <img decoding="async" src="https://staging15.elocker.com/wp-content/uploads/2023/12/view-all-icon.png"
+                    alt="Resources" title="Resources 12">
+            </button>
+        </div>
+        <div class="row row-reverse-div1">
+            <div class="col-md-6 pe-sm-2">
+                <div class="image-left">
+                    <div class="common-img-div">
+                        <img decoding="async"
+                            src="https://staging15.elocker.com/wp-content/uploads/2023/12/tab-image1.png"
+                            class="img-fluid" alt="about-img1" title="about-img1" width="588">
+                    </div>
+                    <div class="tab-content-box">
+                        <div class="common-heading-main-div">
+                            <h1 class="content-box-title">
+                                he importance of the TEA2 Regulations for the Public Service
+                            </h1>
+                        </div>
+                        <p class="content-box-desc">
+                            The TEA2 regulation stipulates a set of auditing and accountability requirements. The UK
+                            public sector relies on the ability to communicate, not just internally, between the
+                            forces, be it police, fire or ambulance, but also with each other. Read to learn more
+                            about the importance of the TEA2 regulations and how to manage them.
+                        </p>
+                        <div class="common-btn-main-div">
+                            <button class="read_btn">
+                                <a href="#">Read more</a>
+                                <img decoding="async"
+                                    src="https://staging15.elocker.com/wp-content/uploads/2023/11/arrow-up-right.svg"
+                                    alt="Resources" title="Resources 12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 ps-sm-2">
+                <div class="image-left">
+                    <div class="common-img-div">
+                        <img decoding="async"
+                            src="https://staging15.elocker.com/wp-content/uploads/2023/12/tab-image2.png"
+                            class="img-fluid" alt="about-img1" title="about-img1" width="588">
+                    </div>
+                    <div class="tab-content-box">
+                        <div class="common-heading-main-div">
+                            <h1 class="content-box-title">
+                                The importance of the TEA2 Regulations for the Public Service
+                            </h1>
+
+                        </div>
+                        <p class="content-box-desc">
+                            The TEA2 regulation stipulates a set of auditing and accountability requirements. The UK
+                            public sector relies on the ability to communicate, not just internally, between the
+                            forces, be it police, fire or ambulance, but also with each other. Read to learn more
+                            about the importance of the TEA2 regulations and how to manage them.
+                        </p>
+                        <div class="common-btn-main-div">
+                            <button class="read_btn">
+                                <a href="#">Read more</a>
+                                <img decoding="async"
+                                    src="https://staging15.elocker.com/wp-content/uploads/2023/11/arrow-up-right.svg"
+                                    alt="Resources" title="Resources 12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 pe-sm-2">
+                <div class="image-left">
+                    <div class="common-img-div">
+                        <img decoding="async"
+                            src="https://staging15.elocker.com/wp-content/uploads/2023/12/tab-image3.png"
+                            class="img-fluid" alt="about-img1" title="about-img1" width="588">
+                    </div>
+                    <div class="tab-content-box">
+                        <div class="common-heading-main-div">
+                            <h1 class="content-box-title">
+                                The importance of the TEA2 Regulations for the Public Service
+                            </h1>
+                        </div>
+                        <p class="content-box-desc">
+                            The TEA2 regulation stipulates a set of auditing and accountability requirements. The UK
+                            public sector relies on the ability to communicate, not just internally, between the
+                            forces, be it police, fire or ambulance, but also with each other. Read to learn more
+                            about the importance of the TEA2 regulations and how to manage them.
+                        </p>
+                        <div class="common-btn-main-div">
+                            <button class="read_btn">
+                                <a href="#">Read more</a>
+                                <img decoding="async"
+                                    src="https://staging15.elocker.com/wp-content/uploads/2023/11/arrow-up-right.svg"
+                                    alt="Resources" title="Resources 12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 ps-sm-2">
+                <div class="image-left">
+                    <div class="common-img-div">
+                        <img decoding="async"
+                            src="https://staging15.elocker.com/wp-content/uploads/2023/12/tab-image2.png"
+                            class="img-fluid" alt="about-img1" title="about-img1" width="588">
+                    </div>
+                    <div class="tab-content-box">
+                        <div class="common-heading-main-div">
+                            <h1 class="content-box-title">
+                                The importance of the TEA2 Regulations for the Public Service
+                            </h1>
+                        </div>
+                        <p class="content-box-desc">
+                            The TEA2 regulation stipulates a set of auditing and accountability requirements. The UK
+                            public sector relies on the ability to communicate, not just internally, between the
+                            forces, be it police, fire or ambulance, but also with each other. Read to learn more
+                            about the importance of the TEA2 regulations and how to manage them.
+                        </p>
+                        <div class="common-btn-main-div">
+                            <button class="read_btn">
+                                <a href="#">Read more</a>
+                                <img decoding="async"
+                                    src="https://staging15.elocker.com/wp-content/uploads/2023/11/arrow-up-right.svg"
+                                    alt="Resources" title="Resources 12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="knowledge" class="tabs_detail">
+        <div class="title-button d-flex justify-content-between">
+            <h2 class="title">Knowledgebase</h2>
+            <button class="btn p-0">
+                <a href="#">View all</a>
+                <img decoding="async" src="https://staging15.elocker.com/wp-content/uploads/2023/12/view-all-icon.png"
+                    alt="Resources" title="Resources 12">
+            </button>
+        </div>
+        <div class="row row-reverse-div1">
+            <div class="col-md-6 pe-sm-2">
+                <div class="image-left">
+                    <div class="common-img-div">
+                        <img decoding="async"
+                            src="https://staging15.elocker.com/wp-content/uploads/2023/12/tab-image1.png"
+                            class="img-fluid" alt="about-img1" title="about-img1" width="588">
+                    </div>
+                    <div class="tab-content-box">
+                        <div class="common-heading-main-div">
+                            <h1 class="content-box-title">
+                                he importance of the TEA2 Regulations for the Public Service
+                            </h1>
+                        </div>
+                        <p class="content-box-desc">
+                            The TEA2 regulation stipulates a set of auditing and accountability requirements. The UK
+                            public sector relies on the ability to communicate, not just internally, between the
+                            forces, be it police, fire or ambulance, but also with each other. Read to learn more
+                            about the importance of the TEA2 regulations and how to manage them.
+                        </p>
+                        <div class="common-btn-main-div">
+                            <button class="read_btn">
+                                <a href="#">Read more</a>
+                                <img decoding="async"
+                                    src="https://staging15.elocker.com/wp-content/uploads/2023/11/arrow-up-right.svg"
+                                    alt="Resources" title="Resources 12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 ps-sm-2">
+                <div class="image-left">
+                    <div class="common-img-div">
+                        <img decoding="async"
+                            src="https://staging15.elocker.com/wp-content/uploads/2023/12/tab-image2.png"
+                            class="img-fluid" alt="about-img1" title="about-img1" width="588">
+                    </div>
+                    <div class="tab-content-box">
+                        <div class="common-heading-main-div">
+                            <h1 class="content-box-title">
+                                The importance of the TEA2 Regulations for the Public Service
+                            </h1>
+
+                        </div>
+                        <p class="content-box-desc">
+                            The TEA2 regulation stipulates a set of auditing and accountability requirements. The UK
+                            public sector relies on the ability to communicate, not just internally, between the
+                            forces, be it police, fire or ambulance, but also with each other. Read to learn more
+                            about the importance of the TEA2 regulations and how to manage them.
+                        </p>
+                        <div class="common-btn-main-div">
+                            <button class="read_btn">
+                                <a href="#">Read more</a>
+                                <img decoding="async"
+                                    src="https://staging15.elocker.com/wp-content/uploads/2023/11/arrow-up-right.svg"
+                                    alt="Resources" title="Resources 12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 pe-sm-2">
+                <div class="image-left">
+                    <div class="common-img-div">
+                        <img decoding="async"
+                            src="https://staging15.elocker.com/wp-content/uploads/2023/12/tab-image3.png"
+                            class="img-fluid" alt="about-img1" title="about-img1" width="588">
+                    </div>
+                    <div class="tab-content-box">
+                        <div class="common-heading-main-div">
+                            <h1 class="content-box-title">
+                                The importance of the TEA2 Regulations for the Public Service
+                            </h1>
+                        </div>
+                        <p class="content-box-desc">
+                            The TEA2 regulation stipulates a set of auditing and accountability requirements. The UK
+                            public sector relies on the ability to communicate, not just internally, between the
+                            forces, be it police, fire or ambulance, but also with each other. Read to learn more
+                            about the importance of the TEA2 regulations and how to manage them.
+                        </p>
+                        <div class="common-btn-main-div">
+                            <button class="read_btn">
+                                <a href="#">Read more</a>
+                                <img decoding="async"
+                                    src="https://staging15.elocker.com/wp-content/uploads/2023/11/arrow-up-right.svg"
+                                    alt="Resources" title="Resources 12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 ps-sm-2">
+                <div class="image-left">
+                    <div class="common-img-div">
+                        <img decoding="async"
+                            src="https://staging15.elocker.com/wp-content/uploads/2023/12/tab-image2.png"
+                            class="img-fluid" alt="about-img1" title="about-img1" width="588">
+                    </div>
+                    <div class="tab-content-box">
+                        <div class="common-heading-main-div">
+                            <h1 class="content-box-title">
+                                The importance of the TEA2 Regulations for the Public Service
+                            </h1>
+                        </div>
+                        <p class="content-box-desc">
+                            The TEA2 regulation stipulates a set of auditing and accountability requirements. The UK
+                            public sector relies on the ability to communicate, not just internally, between the
+                            forces, be it police, fire or ambulance, but also with each other. Read to learn more
+                            about the importance of the TEA2 regulations and how to manage them.
+                        </p>
+                        <div class="common-btn-main-div">
+                            <button class="read_btn">
+                                <a href="#">Read more</a>
+                                <img decoding="async"
+                                    src="https://staging15.elocker.com/wp-content/uploads/2023/11/arrow-up-right.svg"
+                                    alt="Resources" title="Resources 12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    // tabs script
+    document.addEventListener("DOMContentLoaded", function () {
+
+        document.querySelector('.tabs_detail').classList.add('active');
+
+        document.querySelector('.clickable-block').classList.add('active');
+
+        document.querySelectorAll('.clickable-block').forEach(function (tabLink) {
+            tabLink.addEventListener('click', function () {
+                var index = Array.from(this.parentNode.children).indexOf(this);
+
+                document.querySelectorAll('.clickable-block').forEach(function (link) {
+                    link.classList.remove('active');
+                });
+            
+                this.classList.add('active');
+
+                document.querySelectorAll('.tabs_detail').forEach(function (section) {
+                    section.classList.remove('active');
+                });
+                document.querySelectorAll('.tabs_detail')[index].classList.add('active');
+            });
+        });
+
+    });
+</script>
+</body>
+
+</html>
